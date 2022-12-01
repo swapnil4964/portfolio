@@ -1,0 +1,8 @@
+footer{
+    padding:1rem;
+    width: 100%;
+    display: flex;
+    background-color: blueviolet;
+    box-sizing: border-box;margin-top: auto;
+    height: 3rem;
+}

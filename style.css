@@ -1,0 +1,148 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  background-color: blueviolet;
+  box-sizing: border-box;
+  margin-top: auto;
+  height: 3rem;
+  display: none;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+
+section {
+  padding: 0 1rem;
+}
+
+/* Intro section */
+
+#intro {
+  width: 40%;
+  background: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: calc(100vh - 4rem); */
+  flex-direction: column;
+}
+
+#intro .head1 {
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+#intro h1 {
+  font-size: 3rem;
+  font-family: monospace;
+  line-height: 6rem;
+}
+
+/* Intro section ends */
+
+/* About section */
+
+#about {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: calc(100% - 3rem); */
+  flex-direction: column;
+}
+
+#about h3 {
+  font-size: 3rem;
+}
+
+#about p {
+  font-size: 2rem;
+  white-space: normal;
+  text-align: center;
+  max-width: 570px;
+}
+
+#contact {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 600px) {
+  main{
+    flex-wrap: wrap;
+  }
+  #intro {
+    width: 100%;
+    height: 100vh;
+  }
+  #about {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #about h3{
+    font-size: 2rem;
+  }
+
+  #about p{
+    font-size: 24px;
+  }
+  #intro h1 {
+    font-size: 2rem;
+  }
+
+  #intro .head1 {
+    font-size: 1rem;
+  }
+
+  header a{
+    font-size: 16px!important;
+    margin-right: 8px!important;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) and (max-width: 1240px){
+  main{
+    flex-wrap: wrap;
+  }
+  #intro {
+    width: 100%;
+  }
+  #about {
+    width: 100%;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+}
